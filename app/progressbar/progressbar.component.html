@@ -1,0 +1,12 @@
+<div class="row">
+        <div class="col-md-12">
+            <div class="pgBar_step"><a [routerLink]="['/step1']">Step1</a> </div>
+            <div class="pgBar_step"><a [routerLink]="['/step2']">Step2 </a></div>
+            <div class="pgBar_step"><a [routerLink]="['/step3']">Step3 </a></div>
+            <div class="pgBar_step"><a [routerLink]="['/step4']">Step4 </a></div>
+        </div>
+        
+        <div class="col-md-12 progress_bar" >
+            <div class="progress_step" [style.width.%]  = 'progess'></div>
+        </div>
+    </div>

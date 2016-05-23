@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "image": "/Content/images/shoes.jpg",
+        "name":"Teleporting Shoes",
+        "price":120
+    },
+        {
+        "id": 2,
+        "image": "/Content/images/hat.jpg",
+        "name":"HP Recover Hat",
+        "price":500
+    },
+        {
+        "id": 3,
+        "image": "/Content/images/gloves.jpg",
+        "name":"Attack Plus Gloves",
+        "price":190
+    },
+        {
+        "id": 4,
+        "image": "/Content/images/scarf.jpg",
+        "name":"Invisible Scarf",
+        "price":300
+    },
+        {
+        "id": 5,
+        "image": "/Content/images/umbrella.jpg",
+        "name":"MP Recover Umbrella",
+        "price":500
+    }
+   
+]
