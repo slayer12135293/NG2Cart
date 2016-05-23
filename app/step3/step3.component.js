@@ -41,7 +41,8 @@ System.register(['@angular/core', '../service/products.service', '../service/car
                     this._router = _router;
                     this.totalPrice = 0;
                     this.custForm = _builder.group({
-                        "name": new common_1.Control("", common_1.Validators.compose([common_1.Validators.required, common_1.Validators.minLength(2)])),
+                        "name": new common_1.Control("", common_1.Validators.compose([common_1.Validators.required,
+                            common_1.Validators.minLength(5)])),
                         "email": new common_1.Control("", common_1.Validators.compose([common_1.Validators.required]))
                     });
                 }

@@ -26,7 +26,8 @@ export class Step3Component implements OnInit{
        
         this.custForm = _builder.group(
             {
-                "name": new Control("", Validators.compose([Validators.required, Validators.minLength(2)])),
+                "name": new Control("", Validators.compose([Validators.required, 
+                Validators.minLength(5)])),
                 "email": new Control("", Validators.compose([Validators.required]))
             }
         )

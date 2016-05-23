@@ -7,7 +7,7 @@
 
     <div class="row">
         <div class="col-md-8 reg_container">
-            <form [ngFormModel]="custForm" (ngSubmit)="onSubmit(custForm.value)"  >
+            <form [ngFormModel]="custForm" (ngSubmit)="onSubmit(custForm.value)" >
                
                
                 <div class="row input_row">
@@ -16,13 +16,16 @@
                         <input type="text"
                         class="form-control text_field"   
                         ngControl = "name" 
-                                            
+                        placeholder="Name"                    
                         />
-                        <div [hidden]="true  "  class="alert alert-danger">
-                        Name is required
-                        </div>
-
                        
+                        <div *ngIf =" custForm.controls.name.touched && !custForm.controls.name.valid"  class="alert alert-danger">
+                              Name is required
+                              <div *ngIf ="custForm.controls.name.errors.minlength">
+                                    Name must be at least 5 letters                               
+                              </div>
+                        </div>
+                        
                     </div>
                      
                 </div>
@@ -33,11 +36,18 @@
                         pattern ="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
                         class="form-control text_field"                 
                         ngControl ="email"
-                        
+                        placeholder="Email"
                         />
                         <div [hidden]="true"   class="alert alert-danger">
                         email is required
                         </div>
+                         <div *ngIf =" custForm.controls.email.touched && !custForm.controls.email.valid"  class="alert alert-danger">
+                              Email is required
+                              <div>Email muste be in right format</div>                        
+                             
+                        </div>
+                        
+                        
                        
                     </div>
                      
