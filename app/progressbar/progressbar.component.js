@@ -27,7 +27,11 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
                 __decorate([
                     core_1.Input(), 
                     __metadata('design:type', Number)
-                ], ProgessBarComponent.prototype, "progess", void 0);
+                ], ProgessBarComponent.prototype, "progress", void 0);
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', String)
+                ], ProgessBarComponent.prototype, "currentstep", void 0);
                 ProgessBarComponent = __decorate([
                     core_1.Component({
                         selector: 'progress-bar',

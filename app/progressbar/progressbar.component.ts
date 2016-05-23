@@ -8,7 +8,8 @@ import {  ROUTER_DIRECTIVES } from '@angular/router';
 
 })
 export class ProgessBarComponent {
-    @Input() 
-    progess:number;
+    @Input() progress:number;
     
+    @Input() currentstep:string;
+
 }

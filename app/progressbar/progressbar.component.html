@@ -1,5 +1,27 @@
+
+
 <div class="row">
-        <div class="col-md-12">
+    
+        <div class="col-md-12" *ngIf ="currentstep === 'step1'" >
+            <div class="pgBar_step"><a [routerLink]="['/step1']">Step1</a> </div>
+            <div class="pgBar_step">Step2 </div>
+            <div class="pgBar_step">Step3 </div>
+            <div class="pgBar_step">Step4 </div>
+  
+        </div>
+        <div class="col-md-12"  *ngIf ="currentstep=== 'step2'" >
+            <div class="pgBar_step"><a [routerLink]="['/step1']">Step1</a> </div>
+            <div class="pgBar_step"><a [routerLink]="['/step2']">Step2 </a></div>
+            <div class="pgBar_step">Step3 </div>
+            <div class="pgBar_step">Step4</div>
+        </div>
+         <div class="col-md-12"  *ngIf ="currentstep === 'step3'" >
+            <div class="pgBar_step"><a [routerLink]="['/step1']">Step1</a> </div>
+            <div class="pgBar_step"><a [routerLink]="['/step2']">Step2 </a></div>
+            <div class="pgBar_step"><a [routerLink]="['/step3']">Step3 </a></div>
+            <div class="pgBar_step">Step4 </div>
+        </div>
+             <div class="col-md-12"  *ngIf ="currentstep === 'step4'" >
             <div class="pgBar_step"><a [routerLink]="['/step1']">Step1</a> </div>
             <div class="pgBar_step"><a [routerLink]="['/step2']">Step2 </a></div>
             <div class="pgBar_step"><a [routerLink]="['/step3']">Step3 </a></div>
@@ -7,6 +29,8 @@
         </div>
         
         <div class="col-md-12 progress_bar" >
-            <div class="progress_step" [style.width.%]  = 'progess'></div>
+            <div class="progress_step" [style.width.%]  = 'progress'></div>
         </div>
+        
+        
     </div>
