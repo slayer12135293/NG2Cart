@@ -1,8 +1,8 @@
 {
-    "name": "product-management",
+    "name": "ng2-leicart",
     "version": "1.0.0",
-    "author": "Deborah Kurata",
-    "description": "Package for the Acme Product Management sample application",
+    "author": "Lei Liu",
+    "description": "shopping cart function",
     "scripts": {
         "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
         "tsc": "tsc",
@@ -10,7 +10,8 @@
         "lint": "tslint ./app/**/*.ts -t verbose",
         "lite": "lite-server",
         "typings": "typings",
-        "postinstall": "typings install"
+        "postinstall": "typings install",
+        "test": "karma start karma.conf.js"
     },
     "license": "ISC",
     "dependencies": {
@@ -36,7 +37,15 @@
         "lite-server": "^2.2.0",
         "tslint": "^3.7.4",
         "typescript": "^1.8.10",
-        "typings": "^0.8.1"
+        "typings": "^0.8.1",
+        
+        "jasmine-core": "~2.4.1",
+        "karma": "~0.13.22",
+        "karma-jasmine": "~1.0.2",
+        "karma-sourcemap-loader": "^0.3.7",
+        "karma-chrome-launcher": "^0.2.1",
+        "karma-cli": "^0.0.4"
+      
     },
     "repository": {}
 }
